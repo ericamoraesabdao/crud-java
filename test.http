@@ -1,0 +1,4 @@
+POST http://localhost:8080/invoke-agent
+Content-Type: application/json
+
+"Olá, agente!"

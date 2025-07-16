@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en" class="loading">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" type="image/svg+xml" href="/favicon-stk.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Montserrat:wght@300;400;500;600;700&amp;family=Roboto+Mono:wght@300;400;500;600;700&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="StackSpot AI Portal for CodeBuddy Extension"
+    />
+    <style>
+      html.loading {
+        height: 100%;
+        display: flex;
+      }
+      html.loading body {
+        display: flex;
+        flex: 1;
+        background-color: var(--light-400, #1d1d25);
+        color: var(--light-700, #bcbccf);
+        font: var(--font, 400 0.875rem / 1 Roboto, sans-serif);
+      }
+      html.loading #root {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      html.loading .title {
+        font-size: 16px;
+        font-weight: 400;
+        margin: 30px 0 15px;
+      }
+      html.loading .description {
+        font-size: 13px;
+        margin: 0;
+      }
+      html.loading .spinner {
+        animation: htmlLoadingLoop 1.5s infinite;
+        transform: rotate(-90deg);
+        width: 1.875rem;
+        height: 1.875rem;
+      }
+      html.loading .spinner .outer {
+        stroke: var(--light-600, #2f2f3c);
+      }
+      html.loading .spinner .inner {
+        stroke: var(--primary-500, #ff6900);
+        stroke-dasharray: 100;
+      }
+      @keyframes htmlLoadingLoop {
+        0% {
+          transform: rotate(-100deg);
+          stroke-dashoffset: 80%;
+        }
+        50% {
+          transform: rotate(40deg);
+          stroke-dashoffset: 60%;
+        }
+        100% {
+          transform: rotate(260deg);
+          stroke-dashoffset: 80%;
+        }
+      }
+    </style>
+    <title>StackSpot AI</title>
+    <script
+      type="module"
+      crossorigin=""
+      src="/assets/index-gxSSPmti.js"
+    ></script>
+    <link rel="stylesheet" crossorigin="" href="/assets/index-CeMGH1se.css" />
+    <link rel="prefetch" href="/assets/1c-CgNY1N-L.js" />
+    <link rel="prefetch" href="/assets/1c-DOTL_Doy.js" />
+    <link rel="prefetch" href="/assets/abnf-BjLV93yi.js" />
+    <link rel="prefetch" href="/assets/abnf-R8DH6B-d.js" />
+    <link rel="prefetch" href="/assets/accesslog-B74psqT7.js" />
+    <link rel="prefetch" href="/assets/accesslog-GJv3YBrF.js" />
+    <link rel="prefetch" href="/assets/actionscript-DoqfywO9.js" />
+    <link rel="prefetch" href="/assets/actionscript-E3i-v3xT.js" />
+    <link rel="prefetch" href="/assets/ada-DZlQFpma.js" />
+    <link rel="prefetch" href="/assets/ada-RUsuGPJi.js" />
+    <link rel="prefetch" href="/assets/Agent-C6FUTH99.js" />
+    <link rel="prefetch" href="/assets/AgentPageComponent-BRL90lvX.js" />
+    <link rel="prefetch" href="/assets/AlertBanner-DhPhSsWh.js" />
+    <link rel="prefetch" href="/assets/angelscript-BdZ1b0rs.js" />
+    <link rel="prefetch" href="/assets/angelscript-BF_eOCz2.js" />
+    <link rel="prefetch" href="/assets/apache-CsbpFlqC.js" />
+    <link rel="prefetch" href="/assets/apache-CY3L9TJF.js" />
+    <link rel="prefetch" href="/assets/applescript-CTd9QHXe.js" />
+    <link rel="prefetch" href="/assets/applescript-kY8OmlKB.js" />
+    <link rel="prefetch" href="/assets/arcade-BmMgc7_g.js" />
+    <link rel="prefetch" href="/assets/arcade-D7qy-Z3k.js" />
+    <link rel="prefetch" href="/assets/arduino-BpuK4_sb.js" />
+    <link rel="prefetch" href="/assets/arduino-pNuu6z4_.js" />
+    <link rel="prefetch" href="/assets/armasm-DhSF0be6.js" />
+    <link rel="prefetch" href="/assets/armasm-nKvy_iDO.js" />
+    <link rel="prefetch" href="/assets/asciidoc-B_fy0kBa.js" />
+    <link rel="prefetch" href="/assets/asciidoc-uk_AjgLf.js" />
+    <link rel="prefetch" href="/assets/aspectj-B01aLXWc.js" />
+    <link rel="prefetch" href="/assets/aspectj-DvN9ZbSj.js" />
+    <link rel="prefetch" href="/assets/autohotkey-CZG2ssCb.js" />
+    <link rel="prefetch" href="/assets/autohotkey-Dwddi9HC.js" />
+    <link rel="prefetch" href="/assets/autoit-B_f-Etyy.js" />
+    <link rel="prefetch" href="/assets/autoit-DXMOl7Fd.js" />
+    <link rel="prefetch" href="/assets/avrasm-Ba2EQvoc.js" />
+    <link rel="prefetch" href="/assets/avrasm-BHyBCUWd.js" />
+    <link rel="prefetch" href="/assets/awk-Cb-RiGP0.js" />
+    <link rel="prefetch" href="/assets/awk-Dqi0wJLq.js" />
+    <link rel="prefetch" href="/assets/axapta-BnGbdiBb.js" />
+    <link rel="prefetch" href="/assets/axapta-J1eBZbig.js" />
+    <link rel="prefetch" href="/assets/bash-CN_VnC_Q.js" />
+    <link rel="prefetch" href="/assets/bash-Dn0KsNN8.js" />
+    <link rel="prefetch" href="/assets/basic-Bug0UzDW.js" />
+    <link rel="prefetch" href="/assets/basic-CP-DDU6T.js" />
+    <link rel="prefetch" href="/assets/bnf-D-ttRfaA.js" />
+    <link rel="prefetch" href="/assets/bnf-DZMdTSN9.js" />
+    <link rel="prefetch" href="/assets/brainfuck-BYywhCpy.js" />
+    <link rel="prefetch" href="/assets/brainfuck-DdkJ3uJY.js" />
+    <link rel="prefetch" href="/assets/ButtonLoading-BSkQxh40.js" />
+    <link rel="prefetch" href="/assets/c-CrkkLKnZ.js" />
+    <link rel="prefetch" href="/assets/c-DkSi4Vcz.js" />
+    <link rel="prefetch" href="/assets/c-like-BLVencsc.js" />
+    <link rel="prefetch" href="/assets/c-like-CveyLuzn.js" />
+    <link rel="prefetch" href="/assets/cal-Bok_ig3y.js" />
+    <link rel="prefetch" href="/assets/cal-CC2NHc_X.js" />
+    <link rel="prefetch" href="/assets/capnproto-BZ0dIJRS.js" />
+    <link rel="prefetch" href="/assets/capnproto-uQZ1jOWw.js" />
+    <link rel="prefetch" href="/assets/ceylon-CLrvJLwU.js" />
+    <link rel="prefetch" href="/assets/ceylon-DUrFbaE8.js" />
+    <link rel="prefetch" href="/assets/ChatPlaceholder-ChqyT1QP.js" />
+    <link rel="prefetch" href="/assets/clean-C014A8BU.js" />
+    <link rel="prefetch" href="/assets/clean-jkCpP5TC.js" />
+    <link rel="prefetch" href="/assets/clojure-CqGEsq0s.js" />
+    <link rel="prefetch" href="/assets/clojure-DXdUGBl5.js" />
+    <link rel="prefetch" href="/assets/clojure-repl-Cp-cHE39.js" />
+    <link rel="prefetch" href="/assets/clojure-repl-DMNLmPSV.js" />
+    <link rel="prefetch" href="/assets/cmake-C34UvhfZ.js" />
+    <link rel="prefetch" href="/assets/cmake-CKl4Nywn.js" />
+    <link rel="prefetch" href="/assets/coffeescript-B5dBcvVG.js" />
+    <link rel="prefetch" href="/assets/coffeescript-CuVwHWzp.js" />
+    <link rel="prefetch" href="/assets/ContentValidateFilter-BBAfgK_f.js" />
+    <link rel="prefetch" href="/assets/coq-B6vDZRVa.js" />
+    <link rel="prefetch" href="/assets/coq-DJA4mjuN.js" />
+    <link rel="prefetch" href="/assets/core-CR0xpxu9.js" />
+    <link rel="prefetch" href="/assets/cos-BDv82djz.js" />
+    <link rel="prefetch" href="/assets/cos-DckhWT6g.js" />
+    <link rel="prefetch" href="/assets/cpp-B87jAeCB.js" />
+    <link rel="prefetch" href="/assets/cpp-DU5N9DRj.js" />
+    <link rel="prefetch" href="/assets/CreateAgentPageComponent-Dpp4-Q0n.js" />
+    <link rel="prefetch" href="/assets/crmsh-C1y6eUjt.js" />
+    <link rel="prefetch" href="/assets/crmsh-Dc9XdWBP.js" />
+    <link rel="prefetch" href="/assets/crystal-AiyYbKLq.js" />
+    <link rel="prefetch" href="/assets/crystal-CMPKE4XY.js" />
+    <link rel="prefetch" href="/assets/csharp-CbThlJAI.js" />
+    <link rel="prefetch" href="/assets/csharp-GDFduacm.js" />
+    <link rel="prefetch" href="/assets/csp-BbUF631c.js" />
+    <link rel="prefetch" href="/assets/csp-DK1-V7Db.js" />
+    <link rel="prefetch" href="/assets/css-DoQuzqHc.js" />
+    <link rel="prefetch" href="/assets/css-OjpDdnLT.js" />
+    <link rel="prefetch" href="/assets/CustomAccordion-Cf9vZXrv.js" />
+    <link rel="prefetch" href="/assets/d-Cj7t0knZ.js" />
+    <link rel="prefetch" href="/assets/d-OrpTMEe8.js" />
+    <link rel="prefetch" href="/assets/dart-vlk_R7L2.js" />
+    <link rel="prefetch" href="/assets/dart-x5xGfNX1.js" />
+    <link rel="prefetch" href="/assets/delphi-CtiRgRdw.js" />
+    <link rel="prefetch" href="/assets/delphi-oHShnxHc.js" />
+    <link rel="prefetch" href="/assets/diff-CMHzeABH.js" />
+    <link rel="prefetch" href="/assets/diff-DL7qjb-T.js" />
+    <link rel="prefetch" href="/assets/django-BJHTgcPT.js" />
+    <link rel="prefetch" href="/assets/django-Cr7HIl3A.js" />
+    <link rel="prefetch" href="/assets/dns-7dUc9P0q.js" />
+    <link rel="prefetch" href="/assets/dns-B8Qm8HuY.js" />
+    <link rel="prefetch" href="/assets/dockerfile-DUXjgnq1.js" />
+    <link rel="prefetch" href="/assets/dockerfile-NjbpBWJ2.js" />
+    <link rel="prefetch" href="/assets/dos-C6ygE4Ei.js" />
+    <link rel="prefetch" href="/assets/dos-Cr528CBy.js" />
+    <link rel="prefetch" href="/assets/dsconfig-BetjSZ3D.js" />
+    <link rel="prefetch" href="/assets/dsconfig-DMLBsRr7.js" />
+    <link rel="prefetch" href="/assets/dts-BOH5TDT-.js" />
+    <link rel="prefetch" href="/assets/dts-BY8F7jhl.js" />
+    <link rel="prefetch" href="/assets/dust-210iw9M2.js" />
+    <link rel="prefetch" href="/assets/dust-DsfNS0hI.js" />
+    <link rel="prefetch" href="/assets/ebnf-34c3-wro.js" />
+    <link rel="prefetch" href="/assets/ebnf-BGmXUujk.js" />
+    <link rel="prefetch" href="/assets/elixir-CulBHkM9.js" />
+    <link rel="prefetch" href="/assets/elixir-CYXbd3jG.js" />
+    <link rel="prefetch" href="/assets/elm-BCm6wZbS.js" />
+    <link rel="prefetch" href="/assets/elm-CJCwRLzK.js" />
+    <link rel="prefetch" href="/assets/erb-CANFiuzW.js" />
+    <link rel="prefetch" href="/assets/erb-CyiMB9S8.js" />
+    <link rel="prefetch" href="/assets/erlang-BxfMzAis.js" />
+    <link rel="prefetch" href="/assets/erlang-CYUnCrk0.js" />
+    <link rel="prefetch" href="/assets/erlang-repl-BF7ECcsH.js" />
+    <link rel="prefetch" href="/assets/erlang-repl-C-WvLaul.js" />
+    <link rel="prefetch" href="/assets/excel-DPetn2vF.js" />
+    <link rel="prefetch" href="/assets/excel-N3qtmVj6.js" />
+    <link rel="prefetch" href="/assets/fix-Bw4o98ib.js" />
+    <link rel="prefetch" href="/assets/fix-D7T_oQ9O.js" />
+    <link rel="prefetch" href="/assets/flix-CLYjuGZ9.js" />
+    <link rel="prefetch" href="/assets/flix-DWvLG6E_.js" />
+    <link rel="prefetch" href="/assets/fortran-Cbh4tV_m.js" />
+    <link rel="prefetch" href="/assets/fortran-Dmkq7IMQ.js" />
+    <link rel="prefetch" href="/assets/fsharp-BarQNxPT.js" />
+    <link rel="prefetch" href="/assets/fsharp-DRqE53e9.js" />
+    <link rel="prefetch" href="/assets/gams-BVueaFMy.js" />
+    <link rel="prefetch" href="/assets/gams-DCQByqWd.js" />
+    <link rel="prefetch" href="/assets/gauss-CLQ54ypq.js" />
+    <link rel="prefetch" href="/assets/gauss-DMVDwWC_.js" />
+    <link rel="prefetch" href="/assets/gcode-CUs05r37.js" />
+    <link rel="prefetch" href="/assets/gcode-DDOqRc33.js" />
+    <link rel="prefetch" href="/assets/gherkin-aNBr7KZs.js" />
+    <link rel="prefetch" href="/assets/gherkin-DwdfqIxg.js" />
+    <link rel="prefetch" href="/assets/glsl-B2GG6hRj.js" />
+    <link rel="prefetch" href="/assets/glsl-DFuaITlO.js" />
+    <link rel="prefetch" href="/assets/gml-BweT_BfM.js" />
+    <link rel="prefetch" href="/assets/gml-sg8D2Hoc.js" />
+    <link rel="prefetch" href="/assets/go-C9ntsEGV.js" />
+    <link rel="prefetch" href="/assets/go-DOIHECmn.js" />
+    <link rel="prefetch" href="/assets/golo-5y-cAlg7.js" />
+    <link rel="prefetch" href="/assets/golo-C2Fw4Pea.js" />
+    <link rel="prefetch" href="/assets/gradle-C5LRK4lY.js" />
+    <link rel="prefetch" href="/assets/gradle-DFdt0p6y.js" />
+    <link rel="prefetch" href="/assets/groovy-CqO0xXbN.js" />
+    <link rel="prefetch" href="/assets/groovy-VCgQsHAa.js" />
+    <link rel="prefetch" href="/assets/group-dependencies-D1TId8Gc.js" />
+    <link rel="prefetch" href="/assets/haml-CKc8wyA5.js" />
+    <link rel="prefetch" href="/assets/haml-Du0d9Qpu.js" />
+    <link rel="prefetch" href="/assets/handlebars-BqpMwd25.js" />
+    <link rel="prefetch" href="/assets/handlebars-D_yEKgm6.js" />
+    <link rel="prefetch" href="/assets/haskell-41hNuyeB.js" />
+    <link rel="prefetch" href="/assets/haskell-BSgKG0fA.js" />
+    <link rel="prefetch" href="/assets/haxe-Bbxdab9d.js" />
+    <link rel="prefetch" href="/assets/haxe-CHJ64SSj.js" />
+    <link rel="prefetch" href="/assets/helper-3gI9Ghhf.js" />
+    <link rel="prefetch" href="/assets/helper-BDmM_dLn.js" />
+    <link rel="prefetch" href="/assets/Home-BU48a3GX.js" />
+    <link rel="prefetch" href="/assets/hooks-QOITsv7u.js" />
+    <link rel="prefetch" href="/assets/hsp-BfO253pz.js" />
+    <link rel="prefetch" href="/assets/hsp-mchRLSoT.js" />
+    <link rel="prefetch" href="/assets/htmlbars-BdupgdwA.js" />
+    <link rel="prefetch" href="/assets/htmlbars-Clct9xW0.js" />
+    <link rel="prefetch" href="/assets/http-BN8CM1d7.js" />
+    <link rel="prefetch" href="/assets/http-FG-1bz0S.js" />
+    <link rel="prefetch" href="/assets/hy-CljtLrIB.js" />
+    <link rel="prefetch" href="/assets/hy-DEvS6GxD.js" />
+    <link rel="prefetch" href="/assets/index-B4TwMXe7.js" />
+    <link rel="prefetch" href="/assets/index-B7Y92LVr.js" />
+    <link rel="prefetch" href="/assets/index-BkMTSnPJ.js" />
+    <link rel="prefetch" href="/assets/index-BpN8JoNI.js" />
+    <link rel="prefetch" href="/assets/index-BttfMx9u.js" />
+    <link rel="prefetch" href="/assets/index-BxOP-Q3d.js" />
+    <link rel="prefetch" href="/assets/index-BZKKS7my.js" />
+    <link rel="prefetch" href="/assets/index-BzT4T_8y.js" />
+    <link rel="prefetch" href="/assets/index-BZwbjpCD.js" />
+    <link rel="prefetch" href="/assets/index-C2vGAndj.js" />
+    <link rel="prefetch" href="/assets/index-C4xkjnHk.js" />
+    <link rel="prefetch" href="/assets/index-C8Bv0UES.js" />
+    <link rel="prefetch" href="/assets/index-CATap4er.js" />
+    <link rel="prefetch" href="/assets/index-CIC3gwQf.js" />
+    <link rel="prefetch" href="/assets/index-CIXl0FB9.js" />
+    <link rel="prefetch" href="/assets/index-CKBSqlzR.js" />
+    <link rel="prefetch" href="/assets/index-CKEDq3g-.js" />
+    <link rel="prefetch" href="/assets/index-CLXkpfHF.js" />
+    <link rel="prefetch" href="/assets/index-CXcZHJ9k.js" />
+    <link rel="prefetch" href="/assets/index-D0zM7asS.js" />
+    <link rel="prefetch" href="/assets/index-Da3sn8Je.js" />
+    <link rel="prefetch" href="/assets/index-DcIdyQDj.js" />
+    <link rel="prefetch" href="/assets/index-DDJT0MjX.js" />
+    <link rel="prefetch" href="/assets/index-DI_ANuzT.js" />
+    <link rel="prefetch" href="/assets/index-DJdX4o54.js" />
+    <link rel="prefetch" href="/assets/index-DLUPzfov.js" />
+    <link rel="prefetch" href="/assets/index-DnkqaVbM.js" />
+    <link rel="prefetch" href="/assets/index-Dt6bUIYZ.js" />
+    <link rel="prefetch" href="/assets/index-DVH76bA6.js" />
+    <link rel="prefetch" href="/assets/index-DW_cVdgg.js" />
+    <link rel="prefetch" href="/assets/index-DXb-1Sbn.js" />
+    <link rel="prefetch" href="/assets/index-FSkwmVJH.js" />
+    <link rel="prefetch" href="/assets/index-i6PXrVUO.js" />
+    <link rel="prefetch" href="/assets/index-jGQ_u2qv.js" />
+    <link rel="prefetch" href="/assets/index-NRUe3_Nm.js" />
+    <link rel="prefetch" href="/assets/index-NWl4mM3d.js" />
+    <link rel="prefetch" href="/assets/index-uU46mJWg.js" />
+    <link rel="prefetch" href="/assets/index-wZTXaDns.js" />
+    <link rel="prefetch" href="/assets/inform7-CIhq2jU0.js" />
+    <link rel="prefetch" href="/assets/inform7-DetsgR2I.js" />
+    <link rel="prefetch" href="/assets/ini-CUN5Fz6a.js" />
+    <link rel="prefetch" href="/assets/ini-DICDFmn5.js" />
+    <link rel="prefetch" href="/assets/irpf90-BGwK5upn.js" />
+    <link rel="prefetch" href="/assets/irpf90-DcQfK9qv.js" />
+    <link rel="prefetch" href="/assets/isbl-B2PQTUnR.js" />
+    <link rel="prefetch" href="/assets/isbl-BW2-1xqY.js" />
+    <link rel="prefetch" href="/assets/java-Bc7Yug6-.js" />
+    <link rel="prefetch" href="/assets/java-BopHZ59q.js" />
+    <link rel="prefetch" href="/assets/javascript-Bcajz3YC.js" />
+    <link rel="prefetch" href="/assets/javascript-CdD3GFDK.js" />
+    <link rel="prefetch" href="/assets/jboss-cli-7Bb2wtKY.js" />
+    <link rel="prefetch" href="/assets/jboss-cli-K4clo2i8.js" />
+    <link rel="prefetch" href="/assets/json-_cGKMkqV.js" />
+    <link rel="prefetch" href="/assets/json-BFYCgnm2.js" />
+    <link rel="prefetch" href="/assets/json-ORQwVjD_.js" />
+    <link rel="prefetch" href="/assets/julia-CDgfjnD1.js" />
+    <link rel="prefetch" href="/assets/julia-CflsGA1_.js" />
+    <link rel="prefetch" href="/assets/julia-repl-DGypJCsN.js" />
+    <link rel="prefetch" href="/assets/julia-repl-DTkCRO_Z.js" />
+    <link rel="prefetch" href="/assets/KnowledgeObjectsTab-DuiN5Djl.js" />
+    <link rel="prefetch" href="/assets/KnowledgeSource-BK33kgKA.js" />
+    <link
+      rel="prefetch"
+      href="/assets/KnowledgeSourcePageComponent-C8b9yFj7.js"
+    />
+    <link rel="prefetch" href="/assets/kotlin-17jKjul0.js" />
+    <link rel="prefetch" href="/assets/kotlin-DSmpQSGN.js" />
+    <link rel="prefetch" href="/assets/lasso-BciudTQ1.js" />
+    <link rel="prefetch" href="/assets/lasso-jIlyULBe.js" />
+    <link rel="prefetch" href="/assets/latex-4QRwIuDs.js" />
+    <link rel="prefetch" href="/assets/latex-CHdb8PhR.js" />
+    <link rel="prefetch" href="/assets/ldif-Dz1YomrJ.js" />
+    <link rel="prefetch" href="/assets/ldif-jBEfafs_.js" />
+    <link rel="prefetch" href="/assets/leaf--Sy8O2Qj.js" />
+    <link rel="prefetch" href="/assets/leaf-CQphRTnn.js" />
+    <link rel="prefetch" href="/assets/less-COL1IJdj.js" />
+    <link rel="prefetch" href="/assets/less-D0Ccux41.js" />
+    <link rel="prefetch" href="/assets/lisp-CKEZ50XB.js" />
+    <link rel="prefetch" href="/assets/lisp-DfrNO5te.js" />
+    <link rel="prefetch" href="/assets/livecodeserver-DSOwLzQ4.js" />
+    <link rel="prefetch" href="/assets/livecodeserver-WU_wnUq8.js" />
+    <link rel="prefetch" href="/assets/livescript-oQhn4lAX.js" />
+    <link rel="prefetch" href="/assets/livescript-szOvHRSZ.js" />
+    <link rel="prefetch" href="/assets/llvm-CR5JWJ8t.js" />
+    <link rel="prefetch" href="/assets/llvm-Ctq8Ea1M.js" />
+    <link rel="prefetch" href="/assets/lsl-_WYePwv8.js" />
+    <link rel="prefetch" href="/assets/lsl-CZ-92Osz.js" />
+    <link rel="prefetch" href="/assets/lua-CchWoDur.js" />
+    <link rel="prefetch" href="/assets/lua-CtuzIFQ2.js" />
+    <link rel="prefetch" href="/assets/main-CpFDEswX.js" />
+    <link rel="prefetch" href="/assets/makefile-CUBjRDBz.js" />
+    <link rel="prefetch" href="/assets/makefile-YpIxB--R.js" />
+    <link rel="prefetch" href="/assets/Markdown-B7am6J_-.js" />
+    <link rel="prefetch" href="/assets/markdown-Bnpjmjdr.js" />
+    <link rel="prefetch" href="/assets/markdown-CYEVm3q9.js" />
+    <link rel="prefetch" href="/assets/MarkdownViewer-C6P4eUyn.js" />
+    <link rel="prefetch" href="/assets/mathematica-COAiyu9R.js" />
+    <link rel="prefetch" href="/assets/mathematica-DMjmGOFL.js" />
+    <link rel="prefetch" href="/assets/matlab-bMP2hmJA.js" />
+    <link rel="prefetch" href="/assets/matlab-CguXSCNp.js" />
+    <link rel="prefetch" href="/assets/maxima-Btc8gbDl.js" />
+    <link rel="prefetch" href="/assets/maxima-CiGgQtRy.js" />
+    <link rel="prefetch" href="/assets/mel-BKEdQ-Ac.js" />
+    <link rel="prefetch" href="/assets/mel-Bo9SB1R4.js" />
+    <link rel="prefetch" href="/assets/mercury-BNWYgGgu.js" />
+    <link rel="prefetch" href="/assets/mercury-Cg7tRNfI.js" />
+    <link rel="prefetch" href="/assets/mipsasm-3PnhVJ9W.js" />
+    <link rel="prefetch" href="/assets/mipsasm-CNyeTk3S.js" />
+    <link rel="prefetch" href="/assets/mizar-BDwbcIdl.js" />
+    <link rel="prefetch" href="/assets/mizar-BICf15Zj.js" />
+    <link rel="prefetch" href="/assets/MobileModal-B3I3p8bO.js" />
+    <link rel="prefetch" href="/assets/mojolicious-DiD_1YV0.js" />
+    <link rel="prefetch" href="/assets/mojolicious-DZ3FoKk4.js" />
+    <link rel="prefetch" href="/assets/monkey-CDm4m-cU.js" />
+    <link rel="prefetch" href="/assets/monkey-D6kono4g.js" />
+    <link rel="prefetch" href="/assets/moonscript-Ba-Tqbk8.js" />
+    <link rel="prefetch" href="/assets/moonscript-BuQ3OSST.js" />
+    <link rel="prefetch" href="/assets/n1ql-AxtiJSd2.js" />
+    <link rel="prefetch" href="/assets/n1ql-C0-JVOVE.js" />
+    <link rel="prefetch" href="/assets/nginx-DwELR1Kc.js" />
+    <link rel="prefetch" href="/assets/nginx-P6Ygd745.js" />
+    <link rel="prefetch" href="/assets/nim-KY_2nvc3.js" />
+    <link rel="prefetch" href="/assets/nim-WLvfBExD.js" />
+    <link rel="prefetch" href="/assets/nix-CgXzKh7C.js" />
+    <link rel="prefetch" href="/assets/nix-CYCtYL9u.js" />
+    <link rel="prefetch" href="/assets/node-repl-DFkgLtXM.js" />
+    <link rel="prefetch" href="/assets/node-repl-DxuznmQ3.js" />
+    <link rel="prefetch" href="/assets/Notifications-DA5WRIL6.js" />
+    <link rel="prefetch" href="/assets/nsis-BUWEVXY5.js" />
+    <link rel="prefetch" href="/assets/nsis-DuGBnzB5.js" />
+    <link rel="prefetch" href="/assets/objectivec-DaSEGJ40.js" />
+    <link rel="prefetch" href="/assets/objectivec-DxDPTnN0.js" />
+    <link rel="prefetch" href="/assets/ocaml-Lke8W5fZ.js" />
+    <link rel="prefetch" href="/assets/ocaml-TB-QOAno.js" />
+    <link rel="prefetch" href="/assets/openscad-BUF8N3i5.js" />
+    <link rel="prefetch" href="/assets/openscad-CJxV9tVQ.js" />
+    <link rel="prefetch" href="/assets/oxygene-C33XOKUk.js" />
+    <link rel="prefetch" href="/assets/oxygene-CNTFR9M0.js" />
+    <link rel="prefetch" href="/assets/Paginate-DYyvFZ4m.js" />
+    <link rel="prefetch" href="/assets/parser3-DHKpGvt7.js" />
+    <link rel="prefetch" href="/assets/parser3-DkkG33l8.js" />
+    <link rel="prefetch" href="/assets/perl-CG48H2Tk.js" />
+    <link rel="prefetch" href="/assets/perl-msIOsRUF.js" />
+    <link rel="prefetch" href="/assets/pf-AL4V6GUi.js" />
+    <link rel="prefetch" href="/assets/pf-B8CGBekM.js" />
+    <link rel="prefetch" href="/assets/pgsql-BsqQrJiv.js" />
+    <link rel="prefetch" href="/assets/pgsql-C72BsFGV.js" />
+    <link rel="prefetch" href="/assets/php-BnOcpMux.js" />
+    <link rel="prefetch" href="/assets/php-DTkL8bD1.js" />
+    <link rel="prefetch" href="/assets/php-template-BQLZ6iCT.js" />
+    <link rel="prefetch" href="/assets/php-template-C8xI6MZK.js" />
+    <link rel="prefetch" href="/assets/plaintext-Bw0fGuoK.js" />
+    <link rel="prefetch" href="/assets/plaintext-TgN34U_P.js" />
+    <link rel="prefetch" href="/assets/pony-D2s0nSMG.js" />
+    <link rel="prefetch" href="/assets/pony-PCO-H92_.js" />
+    <link rel="prefetch" href="/assets/powershell-CwBe08EC.js" />
+    <link rel="prefetch" href="/assets/powershell-YRLFYdDA.js" />
+    <link rel="prefetch" href="/assets/processing-83OAnlCi.js" />
+    <link rel="prefetch" href="/assets/processing-cJPVgJdv.js" />
+    <link rel="prefetch" href="/assets/profile-CnZ-n8gO.js" />
+    <link rel="prefetch" href="/assets/profile-Co0NG88S.js" />
+    <link rel="prefetch" href="/assets/prolog-2Rxvo3d_.js" />
+    <link rel="prefetch" href="/assets/prolog-Cg0K9Xbv.js" />
+    <link rel="prefetch" href="/assets/properties-BZrOFGmF.js" />
+    <link rel="prefetch" href="/assets/properties-ClEVuTZR.js" />
+    <link rel="prefetch" href="/assets/protobuf-Cc7EZO5Y.js" />
+    <link rel="prefetch" href="/assets/protobuf-COtYC4DZ.js" />
+    <link rel="prefetch" href="/assets/puppet-CJr7B09H.js" />
+    <link rel="prefetch" href="/assets/puppet-DeC2dJva.js" />
+    <link rel="prefetch" href="/assets/purebasic-B2LO8Daq.js" />
+    <link rel="prefetch" href="/assets/purebasic-lmx8MMfp.js" />
+    <link rel="prefetch" href="/assets/python-BctvjIbZ.js" />
+    <link rel="prefetch" href="/assets/python-coUEDzck.js" />
+    <link rel="prefetch" href="/assets/python-repl-CEC3oL55.js" />
+    <link rel="prefetch" href="/assets/python-repl-f_19wJYw.js" />
+    <link rel="prefetch" href="/assets/q-ClVUhk4N.js" />
+    <link rel="prefetch" href="/assets/q-Fy42gULN.js" />
+    <link rel="prefetch" href="/assets/qml-DlvJsyfx.js" />
+    <link rel="prefetch" href="/assets/qml-WV58KNua.js" />
+    <link rel="prefetch" href="/assets/QuickCommand-pC-2XuzU.js" />
+    <link rel="prefetch" href="/assets/QuickCommandPageComponent-XmgRxTmF.js" />
+    <link rel="prefetch" href="/assets/r-BMDAIFC7.js" />
+    <link rel="prefetch" href="/assets/r-CnigUbQl.js" />
+    <link rel="prefetch" href="/assets/react-markdown-ClsafiPR.js" />
+    <link rel="prefetch" href="/assets/reasonml-B8wdWWQZ.js" />
+    <link rel="prefetch" href="/assets/reasonml-D-8_Lf63.js" />
+    <link rel="prefetch" href="/assets/RedirectionHandler-Dym5EKNP.js" />
+    <link rel="prefetch" href="/assets/rib-DhxZj9fV.js" />
+    <link rel="prefetch" href="/assets/rib-hyuscHmD.js" />
+    <link rel="prefetch" href="/assets/roboconf-C9_f8BAb.js" />
+    <link rel="prefetch" href="/assets/roboconf-jCaWII7o.js" />
+    <link rel="prefetch" href="/assets/routeros-0VVpPsA4.js" />
+    <link rel="prefetch" href="/assets/routeros-CkKZUAOK.js" />
+    <link rel="prefetch" href="/assets/rsl-6V0yyRUD.js" />
+    <link rel="prefetch" href="/assets/rsl-B-_wRvQZ.js" />
+    <link rel="prefetch" href="/assets/ruby-C4tV0GDQ.js" />
+    <link rel="prefetch" href="/assets/ruby-U0BYPmFB.js" />
+    <link rel="prefetch" href="/assets/ruleslanguage-C6IDQ_id.js" />
+    <link rel="prefetch" href="/assets/ruleslanguage-DK9bjLyB.js" />
+    <link rel="prefetch" href="/assets/rust-BRcehiFy.js" />
+    <link rel="prefetch" href="/assets/rust-ByoeQ5jb.js" />
+    <link rel="prefetch" href="/assets/sas-BbXcUVvz.js" />
+    <link rel="prefetch" href="/assets/sas-DzgwSrpf.js" />
+    <link rel="prefetch" href="/assets/scala-B2Q1opOE.js" />
+    <link rel="prefetch" href="/assets/scala-Dzt-MscJ.js" />
+    <link rel="prefetch" href="/assets/scheme-D7X8lENz.js" />
+    <link rel="prefetch" href="/assets/scheme-nXkd8HWa.js" />
+    <link rel="prefetch" href="/assets/scilab-BDRgLrmm.js" />
+    <link rel="prefetch" href="/assets/scilab-CsqaYN_A.js" />
+    <link rel="prefetch" href="/assets/scss-B1JxA0a_.js" />
+    <link rel="prefetch" href="/assets/scss-hD3K75LU.js" />
+    <link rel="prefetch" href="/assets/shell-DhzNfurz.js" />
+    <link rel="prefetch" href="/assets/shell-DtjSgbG3.js" />
+    <link rel="prefetch" href="/assets/SimpleContentCard-Bc2OTC6S.js" />
+    <link rel="prefetch" href="/assets/smali-Dz834AtK.js" />
+    <link rel="prefetch" href="/assets/smali-ggcFQ_OD.js" />
+    <link rel="prefetch" href="/assets/smalltalk-bRqiTIeV.js" />
+    <link rel="prefetch" href="/assets/smalltalk-CkmgX23B.js" />
+    <link rel="prefetch" href="/assets/sml-BmWBFva6.js" />
+    <link rel="prefetch" href="/assets/sml-BZgrt2qR.js" />
+    <link rel="prefetch" href="/assets/sqf-BhMgSC-9.js" />
+    <link rel="prefetch" href="/assets/sqf-CCDCKuBP.js" />
+    <link rel="prefetch" href="/assets/sql_more-CiUnQFCB.js" />
+    <link rel="prefetch" href="/assets/sql_more-CQyX0cuA.js" />
+    <link rel="prefetch" href="/assets/sql-B3JF5j8W.js" />
+    <link rel="prefetch" href="/assets/sql-D9a3dnuY.js" />
+    <link rel="prefetch" href="/assets/stack-information-_TaNwobg.js" />
+    <link rel="prefetch" href="/assets/StackAI-cRzN29lo.js" />
+    <link rel="prefetch" href="/assets/StackAiPageComponent-DbbkGB3V.js" />
+    <link rel="prefetch" href="/assets/stan-BCvRp7za.js" />
+    <link rel="prefetch" href="/assets/stan-M2mdTSOp.js" />
+    <link rel="prefetch" href="/assets/stata-CBjVxKhA.js" />
+    <link rel="prefetch" href="/assets/stata-CIZAk8RJ.js" />
+    <link rel="prefetch" href="/assets/step21-Djvo0Ik0.js" />
+    <link rel="prefetch" href="/assets/step21-PEp2FbgJ.js" />
+    <link rel="prefetch" href="/assets/StepsPanel-B37fTNa7.js" />
+    <link rel="prefetch" href="/assets/styles-BgdSEShV.js" />
+    <link rel="prefetch" href="/assets/stylus-DjKwveV9.js" />
+    <link rel="prefetch" href="/assets/stylus-KpBYw7lY.js" />
+    <link rel="prefetch" href="/assets/subunit-CIiHPJOz.js" />
+    <link rel="prefetch" href="/assets/subunit-DwBuNnI3.js" />
+    <link rel="prefetch" href="/assets/swift-BvFULoGz.js" />
+    <link rel="prefetch" href="/assets/swift-l8Sedkw9.js" />
+    <link rel="prefetch" href="/assets/Tabs-CLMJMWMC.js" />
+    <link rel="prefetch" href="/assets/taggerscript-B2nhDpZI.js" />
+    <link rel="prefetch" href="/assets/taggerscript-BehQgC-r.js" />
+    <link rel="prefetch" href="/assets/tap-Cz77FvlH.js" />
+    <link rel="prefetch" href="/assets/tap-D9strcMz.js" />
+    <link rel="prefetch" href="/assets/tcl-Cw1k2FtN.js" />
+    <link rel="prefetch" href="/assets/tcl-p9VISdXm.js" />
+    <link rel="prefetch" href="/assets/thrift-CAwZw_2g.js" />
+    <link rel="prefetch" href="/assets/thrift-CIprfAE4.js" />
+    <link rel="prefetch" href="/assets/Tooltip-4qCGCnQp.js" />
+    <link rel="prefetch" href="/assets/tp-BoGwmalK.js" />
+    <link rel="prefetch" href="/assets/tp-BsEAiN3i.js" />
+    <link rel="prefetch" href="/assets/translations-B1gNHB6Z.js" />
+    <link rel="prefetch" href="/assets/translations-D8q4ZAgL.js" />
+    <link rel="prefetch" href="/assets/translations-DdXmaxyD.js" />
+    <link rel="prefetch" href="/assets/translations-DQvWLdxK.js" />
+    <link rel="prefetch" href="/assets/translations-zLKzg5Z_.js" />
+    <link rel="prefetch" href="/assets/TrialPlans-Pcf133H0.js" />
+    <link rel="prefetch" href="/assets/twig-1xgj4vMV.js" />
+    <link rel="prefetch" href="/assets/twig-CNi3p3ou.js" />
+    <link rel="prefetch" href="/assets/typescript-C925WkhK.js" />
+    <link rel="prefetch" href="/assets/typescript-DwLqZJLl.js" />
+    <link rel="prefetch" href="/assets/use-full-view-DelUlYHZ.js" />
+    <link rel="prefetch" href="/assets/use-knowledge-source-data-DMzTKuRi.js" />
+    <link
+      rel="prefetch"
+      href="/assets/use-quick-command-permissions-Rx9wBnU8.js"
+    />
+    <link rel="prefetch" href="/assets/use-verify-role-Bs3Wr61d.js" />
+    <link rel="prefetch" href="/assets/utils-BeioBusK.js" />
+    <link rel="prefetch" href="/assets/vala-8Htn2qvX.js" />
+    <link rel="prefetch" href="/assets/vala-KCpr8cfN.js" />
+    <link rel="prefetch" href="/assets/vbnet-BJ8UNq8Q.js" />
+    <link rel="prefetch" href="/assets/vbnet-CsYNC8ZV.js" />
+    <link rel="prefetch" href="/assets/vbscript-C6WdSq9e.js" />
+    <link rel="prefetch" href="/assets/vbscript-Ckk6xqG3.js" />
+    <link rel="prefetch" href="/assets/vbscript-html-B3JODFDm.js" />
+    <link rel="prefetch" href="/assets/vbscript-html-CBkOqIaC.js" />
+    <link rel="prefetch" href="/assets/verilog-C1sqz-sj.js" />
+    <link rel="prefetch" href="/assets/verilog-DSo68DT-.js" />
+    <link rel="prefetch" href="/assets/vhdl-aqwF0Jky.js" />
+    <link rel="prefetch" href="/assets/vhdl-C1F4x3vF.js" />
+    <link rel="prefetch" href="/assets/vim-CNd_h5kc.js" />
+    <link rel="prefetch" href="/assets/vim-V2HD25mw.js" />
+    <link rel="prefetch" href="/assets/WorkspaceDetailsHeader-C5Nfr70p.js" />
+    <link rel="prefetch" href="/assets/x86asm-BXgEvW-J.js" />
+    <link rel="prefetch" href="/assets/x86asm-DLijbJOA.js" />
+    <link rel="prefetch" href="/assets/xl-B4DMPliM.js" />
+    <link rel="prefetch" href="/assets/xl-sMilxJ95.js" />
+    <link rel="prefetch" href="/assets/xml-BExN9J9B.js" />
+    <link rel="prefetch" href="/assets/xml-BXh47oPk.js" />
+    <link rel="prefetch" href="/assets/xquery-C_VE-pLa.js" />
+    <link rel="prefetch" href="/assets/xquery-GsrDavrd.js" />
+    <link rel="prefetch" href="/assets/yaml-BKYJIuvD.js" />
+    <link rel="prefetch" href="/assets/yaml-DWwIBFL3.js" />
+    <link rel="prefetch" href="/assets/zephir-BQpe7wgX.js" />
+    <link rel="prefetch" href="/assets/zephir-DZzC3J8X.js" />
+    <link rel="prefetch" href="/assets/style-B2Kz5wtG.css" />
+  </head>
+  <body data-theme="dark" data-theme-kind="dark">
+    <div id="root">
+      <svg class="spinner" viewBox="0 0 120 120">
+        <circle
+          cx="60"
+          cy="60"
+          r="54"
+          fill="none"
+          stroke-width="12"
+          class="outer"
+        ></circle>
+        <circle
+          stroke-linecap="round"
+          cx="60"
+          cy="60"
+          r="54"
+          fill="none"
+          stroke-width="7"
+          pathLength="100"
+          class="inner"
+        ></circle>
+      </svg>
+      <h1 class="title">Loading the Stackspot AI</h1>
+      <p class="description">This may take several seconds...</p>
+    </div>
+  </body>
+</html>
